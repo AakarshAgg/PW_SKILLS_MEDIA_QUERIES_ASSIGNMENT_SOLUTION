@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Media Queries Q3</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: #fff;
+    }
+
+    body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+    }
+
+    nav {
+        background-color: #242b2e;
+        width: 100%;
+    }
+
+    .large {
+
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+    }
+
+    .large ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul li {
+        margin: 0 10px;
+        list-style: none;
+    }
+
+    ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    img {
+        width: 50px;
+        margin: 0px 20px;
+        align-self: center;
+    }
+
+    button {
+        width: 100px;
+        height: 30px;
+        align-self: center;
+        margin-right: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #0072e1;
+        color: white;
+    }
+
+    .small {
+        display: none;
+    }
+
+    h2+p {
+        font-size: 50px;
+        color: #1893f7;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    p+h4 {
+        color: #1893f7;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    video {
+        width: 412px;
+        height: 455px;
+    }
+
+    .text {
+        width: 532px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .text img {
+        width: 400px;
+    }
+
+    img+p {
+        margin-top: 40px;
+        font-family: sans-serif;
+    }
+
+    .hero-section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .info {
+        background-color: black;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .info h1 {
+        color: rgb(12, 12, 186);
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width:600px) {
+        .large {
+            display: none;
+        }
+
+        .small {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        video {
+            width: 350px;
+        }
+
+        .small>img {
+            width: 50px;
+            margin: 5px 20px;
+        }
+
+        .text img {
+            width: 300px;
+        }
+
+        .menu {
+            margin-right: 30px;
+        }
+
+        .info {
+            height: 140px;
+            background-color: white;
+            color: black;
+            padding: 20px 0px;
+        }
+
+        .info h1 {
+            color: rgb(8, 8, 118);
+            margin-bottom: 20px;
+        }
+
+    }
+</style>
+
+<body>
+    <nav>
+        <section class="large">
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="Logo" />
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <button>Login</button>
+        </section>
+        <section class="small">
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="Logo" />
+            <span class="material-symbols-outlined menu"> menu </span>
+
+        </section>
+    </nav>
+    <main class="hero-section">
+        <div class="text">
+            <h2>Say Hi To</h2>
+            <p>One Card</p>
+            <h4>Co-branded Card Issuers :<h4>
+                    <img src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png"
+                        alt="sponsor1" />
+                    <p>India's best metal credit card. Built with full-stack tech. Backed by the principles of
+                        simplicity, transparency, and giving back control to the user.</p>
+        </div>
+        <video src="Assets/say_hi_2x_d3_.mp4" loop="true" autoplay>
+
+    </main>
+    <section class="info">
+        <h1>No Hidden Fees Ever</h1>
+        <p>No Joining Fees.</p>
+        <p>No Annual Fees.</p>
+        <p>No Rewards Redemption Fees. </p>
+    </section>
+</body>
+
+</html>
